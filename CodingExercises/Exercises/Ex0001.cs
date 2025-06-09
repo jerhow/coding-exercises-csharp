@@ -9,6 +9,20 @@ Description:
 Write a method that takes a string as input and finds the first character that does not repeat anywhere else in the string. 
 The method should be case-sensitive (i.e., 'a' and 'A' are considered different characters). 
 If all characters repeat or the string is empty, return the null character '\0'.
+
+Examples:
+
+Input: "swiss"
+Output: 'w'
+(Explanation: 's' repeats. 'w' is the first character that does not.)
+
+Input: "stress"
+Output: 't'
+(Explanation: 's' repeats. 't' is the first non-repeating character. 'r' and 'e' also repeat.)
+
+Input: "aabbcc"
+Output: '\0'
+(Explanation: All characters in the string repeat.)
 */
 
 [Exercise("ex0001")]
