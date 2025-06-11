@@ -48,6 +48,9 @@ public class Ex0006 : IExercise
 
         while (fast != null && fast.next != null)
         {
+            Console.WriteLine(slow.val);
+            Console.WriteLine(fast.val);
+            Console.WriteLine("\n");
             slow = slow.next;
             fast = fast.next.next;
         }
