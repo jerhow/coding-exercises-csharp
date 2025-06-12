@@ -46,6 +46,8 @@ public class Ex0006 : IExercise
         ListNode slow = head;
         ListNode fast = head;
 
+        // When you reach the end of the list on the `fast` pointer,
+        // the `slow` pointer will be at the mid point.
         while (fast != null && fast.next != null)
         {
             Console.WriteLine(slow.val);
