@@ -56,10 +56,11 @@ public class Ex0022 : IExercise
         Console.WriteLine(result);
     }
 
+    // Because the input size is fixed (constant), and does not grow with any variable input,
+    // the time and space complexity of this solution is O(1).
     public bool IsValidSudoku(char[][] board)
     {
         // We need 9 sets for the columns and 9 sets for the boxes.
-        // A dictionary is a good way to manage this.
         var cols = new Dictionary<int, HashSet<char>>();
         var boxes = new Dictionary<(int, int), HashSet<char>>();
 
