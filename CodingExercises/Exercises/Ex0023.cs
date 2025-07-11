@@ -76,6 +76,7 @@ public class Ex0023 : IExercise
     }   
 }
 
+/*
 // For reference
 public class TreeNode
 {
@@ -89,3 +90,4 @@ public class TreeNode
         this.right = right;
     }
 }
+*/
