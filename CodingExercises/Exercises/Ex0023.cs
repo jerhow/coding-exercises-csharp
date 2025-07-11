@@ -34,6 +34,12 @@ public class Ex0023 : IExercise
         Console.WriteLine("");
     }
 
+    // The time complexity of this solution is O(n), where `n` is the number of nodes in the tree.
+    // This is because each node is visited exactly once. It is added to the queue (Enqueue) one time and removed from the queue (Dequeue) one time. 
+    // Since every node is processed a constant number of times, the runtime is directly proportional to the total number of nodes.
+    // 
+    // The space complexity is O(w) or O(n), where `w` is the maximum width of the tree (the maximum number of nodes at any single level).
+    // The extra space is determined by the maximum number of nodes stored in the queue at any given time. This occurs at the widest level of the tree.
     public IList<IList<int>> LevelOrder(TreeNode root) 
     {
         var results = new List<IList<int>>();
