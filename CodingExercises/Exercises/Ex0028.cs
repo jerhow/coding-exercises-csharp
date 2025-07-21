@@ -42,13 +42,10 @@ public class Ex0028 : IExercise
 
         foreach(int num in nums)
         {
-            if (seen.Contains(num))
+            // `Add` returns false if it already contains the value
+            if (!seen.Add(num))
             {
                 return true;
-            }
-            else
-            {
-                seen.Add(num);
             }
         }
 
