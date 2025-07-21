@@ -34,6 +34,8 @@ public class Ex0028 : IExercise
         Console.WriteLine(output);
     }
 
+    // Time complexity: O(n). 1 iteration through the array, and the HashSet operations (`Contains` and `Add`) are O(1).
+    // Space complexity: O(n) in the worst case, as the HashSet could potentially store all `n` elements if they are unique.
     public bool ContainsDuplicate(int[] nums)
     {
         var seen = new HashSet<int>();
